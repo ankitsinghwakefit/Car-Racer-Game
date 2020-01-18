@@ -32,10 +32,10 @@ function keyUp(e){
 }
 
 function isCollide(a,b){
-    aRect = a.getBoundingClientRect();
-    bRect = b.getBoundingClientRect();
-    return !((aRect.bottom < bRect.top) || (aRect.top > bRect.bottom) || 
-    (aRect.right < bRect.left) || (aRect.left > bRect.right));
+    aCar = a.getBoundingClientRect();
+    bCar = b.getBoundingClientRect();
+    return !((aCar.bottom < bCar.top) || (aCar.top > bCar.bottom) || 
+    (aCar.right < bCar.left) || (aCar.left > bCar.right));
 }
 function moveLines(){
     let lines = document.querySelectorAll(".lines");
